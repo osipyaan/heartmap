@@ -34,18 +34,78 @@
 
     <!-- Section 3: 3D Model -->
     <section>
-      <h2 class="text-2xl font-semibold mb-4">the patch:</h2>
+      <h2 class="text-2xl font-semibold mb-4">proposed solution</h2>
+      <div class="aspect-w-16 aspect-h-9">
+      </div>
+      <p> the HEARTMAP team proposes the development of a novel cardiac patch scaffold embedded with conductive polymers (e.g., polypyrrole or reduced graphene oxide) seeded with iPSC-CMs. To enhance therapeutic precision, we will integrate machine learning (ML) models trained on patient-specific electrogram and imaging data to guide patch placement and predict arrhythmic zones</p>
+      <h2 class="text-2xl font-semibold mb-4">what are hiPSC-CMs?</h2>
+      <p>hiPSC-CMs offer a promising cell source for cardiac regeneration due to their ability to differentiate into functional cardiomyocytes. Preclinical studies have demonstrated improved cardiac function following transplantation of hiPSC-CM patches in animal models. </p>
+    </section>
+
+    <!-- Section 3: 3D Model -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">the patch</h2>
       <div class="aspect-w-16 aspect-h-9">
         <img src="heart.png" alt="Cardiac Patch" width="100" height="100" class="left" />
       </div>
-      <p> MVP: web platform to upload patient ECG + see conductivity map </p>
+      <li>Scaffold: Biodegradable hydrogel scaffold infused with conductive polymer (PPy or rGO)</li>
+      <li>Cells: Human iPSC-CMs validated for purity, conduction, and contractile protein expression</li>
+      <li>Conductivity Enhancement: Scaffold modified to match anisotropic conduction of native myocardium</li>
     </section>
 
+     <section>
+      <h2 class="text-2xl font-semibold mb-4">machine learning model</h2>
+      <div class="aspect-w-16 aspect-h-9">
+      </div>
+      <li>Input: Electrogram data, cardiac MRI, LGE-MRI scar segmentation</li>
+      <li>Output: Predictive placement heatmap, arrhythmic vulnerability index</li>
+      <li>Algorithm: 3D U-Net with attention layers, trained on >100 anonymized ECG/imaging datasets</li>
+    </section>
+    
+    
     <!-- Section 4: Behind the Scenes -->
     <section>
       <h2 class="text-2xl font-semibold mb-4">how do we build it?</h2>
       <img src="yay.png" alt="Cardiac Patch Process" width="624" height="1536" class="center" />
-      <p> </p>
+      <h3> proposed clinical trial structure: trial #1</h3>
+      <p>Yorkshire pigs, MI induced via LAD ligation (n=10 with patch, n=10 for control)
+
+Implantation Site Determination:
+AI-based predictive modeling performed using real-time electrogram mapping
+
+Patch applied epicardially under general anesthesia
+
+Endpoints:
+Electromechanical coupling (optical mapping + ECG)
+
+Fibrosis volume (histology)
+
+Arrhythmia incidence (telemetry)
+
+Histological evidence of iPSC-CM retention and alignment
+
+Reference Study: Wong RC et al., UHN (2020), “Transplantation of iPSC-derived cardiac tissue in swine post-MI improves functional recovery” – Canadian Journal of Cardiology</p>
+      <h3> proposed clinical trial structure: trial #2</h3>
+      <p>Eligibility Criteria: Adult patients (18–70) with ischemic cardiomyopathy
+
+NYHA Class II–III symptoms
+
+Documented infarction within 1 year
+
+Surgical Procedure
+Patch generated in GMP facility from autologous or allogeneic iPSCs
+
+Conductive scaffold fabricated and seeded ex vivo, validated for sterility
+
+AI-generated placement map used to guide epicardial placement
+
+Safety Monitoring
+
+ECG and Holter monitoring for 30 days post-implant
+
+Echocardiogram at baseline, 30, 90, and 180 days
+
+Cardiac MRI at 90 days to assess remodeling and patch integration</p>
     </section>
 
      <!-- Section 4: Behind the Scenes -->
@@ -57,7 +117,7 @@
     <!-- Section 4: Behind the Scenes -->
     <section>
       <h2 class="text-2xl font-semibold mb-4">behind the scenes:</h2>
-      <p>This project combines regenerative engineering, AI, and material science. It was modeled in Blender and visualized using Sketchfab, with supporting research from recent publications in cardiac bioengineering.</p>
+      <p>This project combines regenerative engineering, AI, and material science. Illustrations were done through the use of ChatGPT, with supporting research from recent publications in cardiac bioengineering.</p>
     </section>
     
      <section>
