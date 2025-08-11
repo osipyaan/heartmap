@@ -1,135 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STARLING - explained for students, new to computational biology</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8fafc;
-            color: #1e293b;
-        }
-        /* Sticky top nav bar */
-        nav {
-            background-color: #1a73e8;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            text-align: left;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        header {
-            background-color: #0f172a;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #0f172a;
-        }
-        footer {
-            text-align: center;
-            background-color: #0f172a;
-            color: #94a3b8;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-        .highlight {
-            background-color: #fef9c3;
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEARTMAP</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-red-500 text-white p-6 text-center space-y-4">
+    <div class="flex justify-center">
+      <img src="heartmaplogo.png" alt="Heartmap Logo" width="100" height="100" />
+    </div>
+    <h1 class="text-3xl font-bold">
+      HEARTMAP: Hybrid Engineered Arrhythmia-Resistant Regenerative Tissue with Machine learning-Augmented Placement
+    </h1>
+    <p class="text-lg">an AI-guided solution to support heart regeneration</p>
+  </header>
 
-<!-- Sticky Navigation Bar -->
-<nav>
-    <a href="#">Home</a>
-    <a href="https://osipyaan.github.io/expstar/pipeline" target="_blank">Example Pipeline</a>
-    <a href="INSERT_CODE_LINK_HERE" target="_blank">Code</a>
-    <a href="INSERT_CAMPBELL_LAB_LINK_HERE" target="_blank">Campbell Lab</a>
-</nav>
-
-<header>
-    <h1>STARLING: Making Spatial Biology Clear</h1>
-    <img src="logo.png" alt="Logo" width="100" height="100" />
-    <p>Understanding complex cell data — without the headaches.</p>
-</header>
-
-<main>
-    <section id="what-is">
-        <h2>What is STARLING?</h2>
-        <p>
-            <span class="highlight">STARLING</span> is a computer program that helps scientists make sense of 
-            <strong>spatial single-cell data</strong> — information about where individual cells are located and what molecules they contain.
-        </p>
-        <p>
-            Imagine looking at a detailed city map where every house is a cell, and you also know what's inside each house. 
-            STARLING helps group similar "houses" together into neighborhoods — but it also accounts for mistakes in the map, 
-            like blurry photos or mislabelled streets.
-        </p>
+  <main class="p-6 space-y-12">
+    
+    <!-- Section 1: Health Impact -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬imagine this:</h2>
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+        <img src="grandma.png" alt="Grandma" width="100" height="100" class="flex-shrink-0" />
+        <div class="text-right md:text-left space-y-4">
+          <p>you’re one of thousands waiting. your name’s on a transplant list, but the call never comes. your heart is failing, and the clock is ticking. no backup. no match. no options.
+meanwhile, the science to rebuild organs exists — just not where it’s needed. not yet.</p>
+      <p>over 4,000 canadians are currently waiting for an organ. many will never get one. stem cell-based patches exist, but they’re not personalized — and not ready for clinical use.</p>
+        
+        </div>
+      </div>
     </section>
 
-    <section id="why">
-        <h2>Why Use STARLING?</h2>
-        <ul>
-            <li><strong>Cleaner results</strong> – It detects and corrects for errors caused by cell segmentation mistakes.</li>
-            <li><strong>Better grouping</strong> – Finds clusters of cells that actually make sense biologically.</li>
-            <li><strong>Works with real-world data</strong> – Can handle noisy or imperfect experimental data.</li>
-        </ul>
+    <!-- Section 2: The Innovation -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬the problem: <span class="text-red-600 font-bold">engineered patches fail to integrate electrically</span></h2>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>
+          <span class="text-red-600 font-bold">Whole heart transplants are limited </span> by organ availability, matching criteria, and logistics — thousands die each year waiting.<span class="font-bold text-red-600"> Patches don’t rely on organ donors, which are in critically short supply.</span> 
+        </li>
+        
+        <li>
+          <span class="text-red-600 font-bold">Placement is imprecise</span>, based on guesswork. Inaccurate placement of electrodes can significantly affect the morphology of ECG waveforms, potentially leading to misinterpretation of cardiac rhythms. This underscores the importance of <span class="font-bold text-red-600">precise placement</span> to ensure accurate diagnosis and effective treatment.
+        </li>
+        <li>
+          <span class="text-red-600 font-bold">Electrical mismatch leads to arrhythmias</span>. Studies have shown that spatial profiles of electrical mismatch can determine vulnerability to reentrant arrhythmias. This highlights the critical need for <span class="text-red-600 font-bold">electrical compatibility</span> between the patch and the host tissue to prevent adverse outcomes.
+        </li>
+        <li>
+          <span class="text-red-600 font-bold">Post-MI hearts vary widely — but patches don’t</span>. After a myocardial infarction (MI), the heart undergoes complex remodeling, resulting in heterogeneous tissue characteristics that are not adequately addressed by standardized patches (<em>Proceedings of the National Academy of Sciences</em>).
+        </li>
+        <li>
+          <span class="text-red-600 font-bold">iPSC-derived cardiomyocytes (iPSC-CMs)</span> often exhibit immature electrical properties, leading to poor integration with native cardiac tissue.
+        </li>
+      </ul>
+    </section>
+    
+    <section>
+    <h2 class="text-2xl font-semibold mb-4">🧬 wait, what are hiPSC-CMs?</h2>
+      <p>human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) offer a promising cell source for cardiac regeneration due to their ability to differentiate into functional cardiomyocytes. Preclinical studies have demonstrated improved cardiac function following transplantation of hiPSC-CM patches in animal models.</p>
     </section>
 
-    <section id="how">
-        <h2>Sample Pipeline</h2>
-        <ol>
-            <li><strong>Input:</strong> Data about each cell’s location and molecular markers.</li>
-            <li><strong>Probabilistic modeling:</strong> Uses statistics to guess which measurements are real and which might be errors.</li>
-            <li><strong>Clustering:</strong> Groups cells into meaningful types or "neighborhoods."</li>
-            <li><strong>Output:</strong> A cleaned-up map of cells that better reflects reality.</li>
-        </ol>
+    <!-- Section 3: 3D Model -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬 proposed solution</h2>
+      <div class="aspect-w-16 aspect-h-9"></div>
+      <p>the HEARTMAP team proposes the development of a novel cardiac patch scaffold embedded with conductive polymers (e.g., polypyrrole or reduced graphene oxide) seeded with iPSC-CMs. To enhance therapeutic precision, we will integrate machine learning (ML) models trained on patient-specific electrogram and imaging data to guide patch placement and predict arrhythmic zones.</p>         
+      <p class="aspect-w-16 aspect-h-9">regenerating heart tissue starts long before a patch ever reaches the heart. It begins at the cellular level — where a single stem cell is guided to become a beating cardiomyocyte.</p>
+    </section>
+<section>
+ <h3 class="text-2xl font-semibold mb-6">🧬 the journey:</h3>
+<div class="flex justify-center mb-6">
+  <img src="stemcells.png" alt="Stemcells Graphic" class="w-3/4 max-w-xl rounded" />
+</div>
+
+<ul class="list-disc list-inside ml-6 space-y-2 mb-4">
+  <li><strong>Activin A</strong> triggers mesoderm formation, the germ layer that gives rise to the heart.</li>
+  <li><strong>BMP4</strong> nudges cells toward cardiac progenitor identity.</li>
+  <li><strong>FGF2</strong> supports proliferation and survival of early cardiac cells.</li>
+</ul>
+
+<ul class="list-disc list-inside ml-6 space-y-2">
+  <li><strong>Matrix stiffness</strong> must mimic natural heart tissue.</li>
+  <li><strong>Electrical cues</strong> guide alignment and contractility of cardiomyocytes.</li>
+</ul>
+
+  <p class="mb-8 italic text-gray-700">these factors work together to ensure the resulting cells are ready to sync with the patient’s heart.</p>
+</section>
+<section>
+ <div class="flex flex-col md:flex-row items-start gap-6 mb-6">
+  <img src="patch_making.png" alt="Patchmaking Graphic" width="300" height="100" class="md:w-1/3" />
+
+  <div class="md:w-2/3">
+    <h3 class="text-2xl font-bold mb-4">🧬 biocompatibility: beyond just “safe”</h3>
+    <ul class="list-disc list-inside ml-6 space-y-2">
+      <li><strong>Non-cytotoxicity</strong>: materials must not harm cells or trigger rejection.</li>
+      <li><strong>Mechanical compliance</strong>: patches must “beat” with the heart.</li>
+      <li><strong>Cellular integration</strong>: scaffolds must support gap junctions (e.g., <em>connexin 43</em>).</li>
+    </ul>
+  </div>
+</div>
+
+
+  <p class="mb-6">materials like <strong>rGO (reduced graphene oxide nanosheets) </strong> and <strong>PPy (an organic polymer)</strong> are promising, since they offer conductivity and support alignment of cardiomyocytes.</p>
+  <p class="mb-8 text-gray-700 italic">Referenced: Guo et al., 2023, <em>Bioactive Materials</em>.</p>
+</section>
+
+    <!-- Section 4: The Patch -->
+<section class="my-8">
+  <h2 class="text-2xl font-semibold mb-4">🧬 the patch</h2>
+
+  <div class="flex flex-col md:flex-row items-start gap-6">
+    <img src="patch_demo.png" alt="Cardiac Patch" width="300" height="300" class="md:w-1/3 rounded" />
+
+    <ul class="list-disc space-y-2 md:w-2/3">
+      <li><strong>Scaffold</strong>: Biodegradable hydrogel scaffold infused with conductive polymer (PPy or rGO)</li>
+      <li><strong>Cells</strong>: Human iPSC-CMs validated for purity, conduction, and contractile protein expression</li>
+      <li><strong>Conductivity Enhancement</strong>: Scaffold modified to match anisotropic conduction of native myocardium</li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- Section 5: ML Model -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬 machine learning model</h2>
+      <div class="aspect-w-16 aspect-h-9"></div>
+      <p>for many bioengineered solutions, scalability and biocompatibility remain barriers. however, an ML approach could be a promising change.</p>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>Input: Electrogram data, cardiac MRI, LGE-MRI scar segmentation</li>
+        <li>Output: Predictive placement heatmap, arrhythmic vulnerability index</li>
+        <li>Algorithm: 3D U-Net with attention layers, trained on &gt;100 anonymized ECG/imaging datasets</li>
+      </ul>
+    </section>
+    
+  <h2 class="text-2xl font-semibold mb-4">🧬 ethics in regenerative medicine</h2>
+  <p class=" ml-6 space-y-2">regenerative therapies offer hope, but not without risk. here are a few potential solutions:</p>
+
+  <h2 class="text-2xl font-semibold mb-4">stem cell risk + sourcing</h2>
+  <ul class="list-disc list-inside  ml-6 space-y-2">
+    <li><strong>tumorigenicity</strong>: undifferentiated iPSCs can cause uncontrolled growth. hence, the cells must be screened for existing oncogenic mutations.</li>
+    <li><strong>ethical sourcing</strong>: informed consent of the patient must be present throughout. iPSCs can be ethically sourced by obtaining informed consent from donors for using their somatic cells, like skin or blood cells, for reprogramming into iPSCs. </li>
+  </ul>
+
+  <p class="mb-6 text-gray-700 italic">Miyagawa et al., 2023 emphasized safety monitoring in iPSC-CM patch clinical trials.</p>
+
+  <h2 class="text-2xl font-semibold mb-4">digital risk</h2>
+  <ul class="list-disc list-inside mb-6 space-y-2">
+    <li>AI-analyzed ECGs and imaging could raise <strong>data privacy</strong> concerns, which is why explicit consent procedures need to be introduced to patients, to determine if their data can be used to improve predictions.</li>
+  </ul>
+    
+    <!-- Section 6: Clinical Trial -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬 how do we build it?</h2>
+      <img src="yay.png" alt="Cardiac Patch Process" width="624" height="1536" class="mx-auto mb-6" />
+
+      <h3 class="text-xl font-semibold text-red-600 mb-2">Proposed Clinical Trial Structure: Trial #1</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><span class="font-bold text-red-600">Animal Model:</span> Yorkshire pigs, MI induced via LAD ligation (n=10 with patch, n=10 control)</li>
+        <li><span class="font-bold text-red-600">Implantation Site Determination:</span> AI-based predictive modeling using real-time electrogram mapping</li>
+        <li><span class="font-bold text-red-600">Procedure:</span> Patch applied epicardially under general anesthesia</li>
+        <li><span class="font-bold text-red-600">Endpoints:</span>
+          <ul class="list-disc pl-6">
+            <li>Electromechanical coupling (optical mapping + ECG)</li>
+            <li>Fibrosis volume (histology)</li>
+            <li>Arrhythmia incidence (telemetry)</li>
+            <li>Histological evidence of iPSC-CM retention and alignment</li>
+          </ul>
+        </li>
+        <li><span class="font-bold text-red-600">Reference Study:</span> Wong RC et al., UHN (2020), <em>“Transplantation of iPSC-derived cardiac tissue in swine post-MI improves functional recovery”</em> – Canadian Journal of Cardiology</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold text-red-600 mt-8 mb-2">Proposed Clinical Trial Structure: Trial #2</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><span class="font-bold text-red-600">Eligibility Criteria:</span> Adult patients (18–70) with ischemic cardiomyopathy, NYHA Class II–III symptoms, and documented infarction within 1 year</li>
+        <li><span class="font-bold text-red-600">Surgical Procedure:</span>
+          <ul class="list-disc pl-6">
+            <li>Patch generated in GMP facility from autologous or allogeneic iPSCs</li>
+            <li>Conductive scaffold fabricated and seeded ex vivo, validated for sterility</li>
+            <li>AI-generated placement map used to guide epicardial placement</li>
+          </ul>
+        </li>
+        <li><span class="font-bold text-red-600">Safety Monitoring:</span>
+          <ul class="list-disc pl-6">
+            <li>ECG and Holter monitoring for 30 days post-implant</li>
+            <li>Echocardiogram at baseline, 30, 90, and 180 days</li>
+            <li>Cardiac MRI at 90 days to assess remodeling and patch integration</li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
-    <section id="learn-more">
-        <h2>Read the Papers</h2>
-        <p>
-            Want to dive deeper? Check out:
-        </p>
-        <ul>
-            <li><a href="https://www.biorxiv.org" target="_blank">STARLING preprint on bioRxiv</a></li>
-            <li><a href="https://github.com" target="_blank">STARLING GitHub repository</a></li>
-        </ul>
+    <!-- Section 7: Scaling -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬 how do we scale?</h2>
+      <p>proposed partners: Ted Rogers Centre for Heart Research (UHN + SickKids + U of T) – Comprehensive cardiology and iPSC expertise</p>
     </section>
-</main>
 
-<footer>
-    &copy; 2025 STARLING Education Page – Designed for students learning spatial biology.
-</footer>
+    <!-- Section 8: Behind the Scenes -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬 behind the scenes:</h2>
+      <p>This project combines regenerative engineering, AI, and material science. Illustrations were done through the use of ChatGPT, with supporting research from recent publications in cardiac bioengineering. Website + prototype by Elena Osipyan :) </p>
+    </section>
 
+    <!-- Section 9: References -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🧬 references:</h2>
+      <ul class="list-disc ml-6">
+  <li>
+    <b>Zhang, Donghui</b>, et al. <i>“3D Bioprinting of Cell-Laden Cardiac Patch for Heart Regeneration.”</i> <b><i>NPJ Regenerative Medicine</i></b>, vol. 6, 2021. 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8318604/" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Ntagiantas, Evagelos</b>, and <b>Marco Pignatelli</b>. <i>“Estimating Cardiac Tissue Conductivity from Electrograms with Fully Convolutional Networks.”</i> <b><i>Semantic Scholar</i></b>, 2022. 
+    <a href="https://www.semanticscholar.org/paper/74c70d4c4dadd3e5fea6cbea75982fe19773b7a5" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Shin, Seung Rim</b>, et al. <i>“Electroconductive Biomaterials for Cardiac Tissue Engineering.”</i> <b><i>Frontiers in Bioengineering and Biotechnology</i></b>, vol. 10, 2022. 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8935982/" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Khan, Tareq</b>, et al. <i>“Advances in Conductive Biomaterials for Cardiac Tissue Engineering: Design, Fabrication, and Functional Integration.”</i> <b><i>Polymers</i></b>, vol. 17, no. 5, 2025. 
+    <a href="https://www.mdpi.com/2073-4360/17/5/620" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Liu, Yuxuan</b>, et al. <i>“Large Cardiac Muscle Patches Engineered From Human Induced-Pluripotent Stem Cell–Derived Cardiac Cells Improve Recovery from Myocardial Infarction in Swine.”</i> <b><i>Circulation</i></b>, vol. 137, no. 16, 2018. 
+    <a href="https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.117.030785" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Miyagawa, Shigeru</b>, et al. <i>“Safety Confirmation of Induced Pluripotent Stem Cell–Derived Cardiomyocyte Patches for Clinical Application.”</i> <b><i>NPJ Regenerative Medicine</i></b>, vol. 8, no. 1, 2023. 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10540447/" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Menasché, Philippe</b>. <i>“Cell Therapy Trials for Heart Regeneration—Lessons Learned and Future Directions.”</i> <b><i>Nature Reviews Cardiology</i></b>, vol. 15, 2018. 
+    <a href="https://doi.org/10.1038/s41569-018-0052-7" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Guo, Rui</b>, et al. <i>“Engineering a Conduction-Consistent Cardiac Patch with rGO/PLCL Electrospun Nanofibrous Membrane and Human iPSC-Derived Cardiomyocytes.”</i> <b><i>Bioactive Materials</i></b>, vol. 20, 2023. 
+    <a href="https://www.sciencedirect.com/science/article/pii/S2452199X23000512" class="text-blue-600">Link</a>
+  </li>
+  <li>
+    <b>Ting, Daniel S.W.</b>, et al. <i>“Artificial Intelligence and Deep Learning in Cardiovascular Imaging.”</i> <b><i>Nature Reviews Cardiology</i></b>, vol. 18, 2021. 
+    <a href="https://www.nature.com/articles/s41569-020-00427-2" class="text-blue-600">Link</a>
+  </li>
+</ul>
+
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-100 text-center p-4 mt-12">
+    <p>Made with ❤️ for the INVENIRE Challenge. | GitHub: 
+      <a href="https://osipyaan.github.io/heartmap/" class="text-blue-600">osipyaan/heartmap</a>
+    </p>
+  </footer>
 </body>
 </html>
